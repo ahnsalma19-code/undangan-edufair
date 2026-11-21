@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Tamu — Edu Fair &amp; Career Day 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Fraunces:opsz,wght@9..144,500..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky"></div>
+  <main class="admin">
+    <p class="eyebrow">Panel Panitia · SMKN 6 Kota Tangerang Selatan</p>
+    <h1 class="gold-text">Data Tamu Undangan</h1>
+    <div class="aksi">
+      <label class="btn-gold">Upload CSV<input type="file" id="inputCsv" accept=".csv" /></label>
+      <a class="btn-ghost" href="data-tamu.csv" download>Download CSV Contoh</a>
+      <a class="btn-ghost" href="index.html">Lihat Undangan</a>
+    </div>
+    <div class="kartu-tabel">
+      <table id="tabelTamu">
+        <thead>
+          <tr><th>ID</th><th>Nama Tamu</th><th>Instansi</th><th>Kategori</th><th>No. WhatsApp</th><th>Aksi</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

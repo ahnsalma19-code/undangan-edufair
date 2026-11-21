@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Undangan Edu Fair &amp; Career Day 2026 — SMKN 6 Kota Tangerang Selatan</title>
+  <meta name="description" content="Undangan digital Edu Fair & Career Day 2026 SMKN 6 Kota Tangerang Selatan — buka undanganmu dan konfirmasi kehadiran." />
+  <meta property="og:title" content="Undangan Edu Fair & Career Day 2026" />
+  <meta property="og:description" content="Sabtu, 12 Desember 2026 · SMKN 6 Kota Tangerang Selatan, Jelupang, Serpong Utara." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Fraunces:opsz,wght@9..144,500..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky"></div>
+  <div class="dust" id="dust"></div>
+
+  <!-- ====== SAMPUL UNDANGAN ====== -->
+  <div class="cover" id="cover">
+    <div class="sky"></div>
+    <div class="frame reveal" style="text-align:center">
+      <p class="eyebrow">Undangan Resmi</p>
+      <h1 class="judul-cover">Edu Fair<br /><span class="dan">&amp;</span> Career Day</h1>
+      <p class="tahun">2026</p>
+      <div class="garis"></div>
+      <p class="label">Kepada Yth.</p>
+      <p class="nama-tamu" id="coverNama">Bapak/Ibu/Saudara/i</p>
+      <p class="instansi" id="coverInstansi"></p>
+      <span class="btn-ghost" id="coverKategori" hidden></span>
+      <div class="tombol-cover">
+        <button class="btn-gold" id="btnBuka" type="button">&#9993; Buka Undangan</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== ISI UNDANGAN ====== -->
+  <main class="isi">
+    <section class="bagian"><div class="frame reveal" style="text-align:center">
+      <p class="eyebrow">SMKN 6 Kota Tangerang Selatan Mempersembahkan</p>
+      <h2 class="judul-besar">Edu Fair &amp; Career Day 2026</h2>
+      <p class="tema">&ldquo;Melangkah Pasti, Menata Masa Depan&rdquo;</p>
+      <p class="buka">
+        Dengan hormat, kami mengundang <span class="krem" id="isiNama">Bapak/Ibu/Saudara/i</span><span id="isiInstansi"></span>
+        untuk hadir dan berpartisipasi dalam ajang tahunan pameran pendidikan dan karier sekolah kami.
+      </p>
+    </div></section>
+
+    <section class="bagian"><div class="frame reveal">
+      <p class="eyebrow">Waktu Pelaksanaan</p>
+      <div style="text-align:center">
+        <p class="hari">Sabtu</p>
+        <p class="tanggal">12</p>
+        <p class="bulan">Desember 2026</p>
+        <p class="jam">07.30 &ndash; 15.00 WIB</p>
+      </div>
+      <div class="hitung" id="hitung"></div>
+    </div></section>
+
+    <section class="bagian"><div class="frame reveal">
+      <p class="eyebrow">Lokasi</p>
+      <p class="lokasi">Aula SMK Negeri 6 Kota Tangerang Selatan</p>
+      <p class="alamat">Jl. Magnolia VI No. 6, Kel. Jelupang, Kec. Serpong Utara,<br />Kota Tangerang Selatan, Banten 15323</p>
+      <div class="peta">
+        <iframe title="Peta SMKN 6 Kota Tangerang Selatan" loading="lazy" src="https://www.google.com/maps?q=SMK+Negeri+6+Kota+Tangerang+Selatan&output=embed"></iframe>
+      </div>
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+        <a class="btn-ghost" target="_blank" rel="noreferrer" href="https://maps.google.com/?q=SMK+Negeri+6+Kota+Tangerang+Selatan">Buka di Google Maps &#8599;</a>
+        <a class="btn-ghost" target="_blank" rel="noreferrer" href="https://www.google.com/maps/dir/?api=1&destination=SMK+Negeri+6+Kota+Tangerang+Selatan">Petunjuk Arah &rarr;</a>
+      </div>
+    </div></section>
+
+    <section class="bagian"><div class="frame reveal">
+      <p class="eyebrow">Rundown Acara</p>
+      <ol class="rundown" id="rundown"></ol>
+    </div></section>
+
+    <section class="bagian"><div class="frame reveal">
+      <p class="eyebrow">Benefit Booth</p>
+      <div class="benefit" id="benefit"></div>
+    </div></section>
+
+    <section class="bagian"><div class="frame reveal">
+      <p class="eyebrow">Konfirmasi Kehadiran</p>
+      <p class="konfirmasi">Mohon konfirmasi kehadiran Anda</p>
+      <form class="form" id="formRsvp">
+        <input class="field" id="rsvpNama" placeholder="Nama lengkap" required />
+        <div class="baris">
+          <select class="field" id="rsvpHadir">
+            <option>Hadir</option>
+            <option>Tidak Hadir</option>
+            <option>Masih Ragu</option>
+          </select>
+          <select class="field" id="rsvpJumlah">
+            <option value="1">1 orang</option>
+            <option value="2">2 orang</option>
+            <option value="3">3 orang</option>
+            <option value="4">4 orang</option>
+          </select>
+        </div>
+        <textarea class="field luas" id="rsvpPesan" placeholder="Ucapan / pesan untuk panitia"></textarea>
+        <button class="btn-gold penuh" type="submit">Kirim Konfirmasi</button>
+      </form>
+      <p class="terima-kasih" id="rsvpSelesai" hidden></p>
+    </div></section>
+
+    <footer class="kaki">
+      <p class="sampai-ketemu">Sampai jumpa di Edu Fair 2026</p>
+      <p class="credit">Panitia Edu Fair &amp; Career Day &middot; SMKN 6 Kota Tangerang Selatan &middot; <a class="tautan" href="admin.html">Admin</a></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
